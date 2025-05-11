@@ -38,6 +38,8 @@ public abstract class Logaritmos {
 	public int factorial(int numero) {
 		if(numero<0) throw new IllegalArgumentException();
 		
+		if(numero==0)return 0;
+		
 		int res=1;
 		
 		for(int i = 1; i <= numero; i++) {
@@ -45,5 +47,19 @@ public abstract class Logaritmos {
         }
 
 		return res;
+	}
+	/****
+	 * Calcula cuelquier numero que no sea divisible ni por el ni por 1;
+	 * @param numero
+	 * @return boolean
+	 */
+	public boolean primo (int numero) {
+		if(numero<2) throw new IllegalArgumentException();
+		
+		for(int i = 2; i <= numero/2; i++) {
+            if((numero%i)==0) return false;
+        }
+		
+		return true;
 	}
 }
