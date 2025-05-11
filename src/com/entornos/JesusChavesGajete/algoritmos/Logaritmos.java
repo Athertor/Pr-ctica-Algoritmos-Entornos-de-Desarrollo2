@@ -28,4 +28,22 @@ public abstract class Logaritmos {
 
         return b;
     }
+	
+	
+	/****
+	 * fatorial multiplica todos los valores menores a "numero"
+	 * @param numero
+	 * @return int 
+	 */
+	public int factorial(int numero) {
+		if(numero<0) throw new IllegalArgumentException();
+		
+		int res=1;
+		
+		for(int i = 1; i <= numero; i++) {
+            res *=i;
+        }
+
+		return res;
+	}
 }
