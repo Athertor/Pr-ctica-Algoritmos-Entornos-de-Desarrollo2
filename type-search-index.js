@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"com.entornos.JesusChavesGajete.algoritmos","l":"Algoritmos"},{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"com.entornos.JesusChavesGajete.algoritmos","l":"Principal"}];updateSearchResults();

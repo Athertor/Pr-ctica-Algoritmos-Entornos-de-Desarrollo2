@@ -1,6 +1,6 @@
 package com.entornos.JesusChavesGajete.algoritmos;
 
-public abstract class Logaritmos {
+public abstract class Algoritmos {
 	
 	/****
 	 * La sucecion de Fibonacci es una secuencia de 
@@ -9,7 +9,7 @@ public abstract class Logaritmos {
 	 * @return  int 
 	 */
 	
-	public int fibonacci(int numero) {
+	public static int fibonacci(int numero) {
         if(numero<0) throw new IllegalArgumentException();
         
         int a = 0;
@@ -35,15 +35,15 @@ public abstract class Logaritmos {
 	 * @param numero
 	 * @return int 
 	 */
-	public int factorial(int numero) {
+	public static int factorial(int numero) {
 		if(numero<0) throw new IllegalArgumentException();
 		
 		if(numero==0)return 0;
 		
 		int res=1;
 		
-		for(int i = 1; i <= numero; i++) {
-            res *=i;
+		for(int i = 2; i <= numero; i++) {
+            res =res*i;
         }
 
 		return res;
@@ -53,9 +53,9 @@ public abstract class Logaritmos {
 	 * @param numero
 	 * @return boolean
 	 */
-	public boolean primo (int numero) {
+	public static boolean primo (int numero) {
 		if(numero<2) throw new IllegalArgumentException();
-		
+		if(numero==2) return true;
 		for(int i = 2; i <= numero/2; i++) {
             if((numero%i)==0) return false;
         }
